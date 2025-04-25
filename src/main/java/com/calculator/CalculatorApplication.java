@@ -2,6 +2,8 @@ package com.calculator;
 
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -40,9 +42,18 @@ public class CalculatorApplication extends Application {
      */
     @Override
     public void start(Stage primaryStage) {
-        // TODO: Initialize calculator UI components and show the stage
-        // This will be implemented in subsequent tasks
+        // Load the FXML scene
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/CalculatorView.fxml"));
+        fxmlLoader.setControllerFactory(springContext::getBean);
+        Scene scene = new Scene(fxmlLoader.load());
+        
+        // Load CSS styles
+        scene.getStylesheets().add(getClass().getResource("/css/calculator.css").toExternalForm());
+        
+        // Set up the stage
         primaryStage.setTitle("Calculator");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

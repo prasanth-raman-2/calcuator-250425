@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" 
+      fx:controller="com.calculator.ui.CalculatorController"
+      styleClass="calculator-container" spacing="10">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <TextField fx:id="display" editable="false" styleClass="calculator-display"/>
+
+    <GridPane hgap="5" vgap="5" styleClass="button-grid">
+        <Button text="7" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Button text="8" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Button text="9" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <Button text="÷" onAction="#handleOperation" styleClass="operation-button" focusTraversable="true"
+                GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+        <Button text="4" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button text="5" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button text="6" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button text="×" onAction="#handleOperation" styleClass="operation-button" focusTraversable="true"
+                GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+        <Button text="1" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Button text="2" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Button text="3" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <Button text="-" onAction="#handleOperation" styleClass="operation-button" focusTraversable="true"
+                GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+        <Button text="0" onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <Button text="." onAction="#handleDigit" styleClass="digit-button" focusTraversable="true"
+                GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button text="=" onAction="#handleEquals" styleClass="equals-button" focusTraversable="true"
+                GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <Button text="+" onAction="#handleOperation" styleClass="operation-button" focusTraversable="true"
+                GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+
+        <Button text="C" onAction="#handleClear" styleClass="clear-button" focusTraversable="true"
+                GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4"/>
+        <Button text="⌫" onAction="#handleBackspace" styleClass="backspace-button" focusTraversable="true"
+                GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4"/>
+    </GridPane>
+</VBox>

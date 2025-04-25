@@ -1,0 +1,94 @@
+/* Main container styling */
+.calculator-container {
+    -fx-background-color: #f0f0f0;
+    -fx-min-width: 300px;
+    -fx-min-height: 400px;
+}
+
+/* Display styling */
+.calculator-display {
+    -fx-font-size: 24px;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-min-height: 50px;
+}
+
+/* Button grid styling */
+.button-grid {
+    -fx-alignment: CENTER;
+}
+
+/* Common button styling */
+.button {
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-font-size: 18px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* Focus indicator for accessibility */
+.button:focused {
+    -fx-background-color: derive(-fx-base, 26.4%);
+    -fx-border-color: #4A90E2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+}
+
+/* Digit button styling */
+.digit-button {
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+}
+
+.digit-button:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Operation button styling */
+.operation-button {
+    -fx-background-color: #4A90E2;
+    -fx-text-fill: white;
+}
+
+.operation-button:hover {
+    -fx-background-color: #357ABD;
+}
+
+/* Equals button styling */
+.equals-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.equals-button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Clear button styling */
+.clear-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+}
+
+.clear-button:hover {
+    -fx-background-color: #da190b;
+}
+
+/* Backspace button styling */
+.backspace-button {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: white;
+}
+
+.backspace-button:hover {
+    -fx-background-color: #f57c00;
+}
+
+/* Error state styling */
+.error {
+    -fx-text-fill: #f44336;
+}

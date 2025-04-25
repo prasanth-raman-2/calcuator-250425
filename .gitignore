@@ -4,7 +4,13 @@
 # Log files
 *.log
 
-# Package files
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
 *.jar
 *.war
 *.nar
@@ -13,7 +19,11 @@
 *.tar.gz
 *.rar
 
-# Maven
+# Virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Maven specific
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -25,22 +35,23 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# IntelliJ IDEA
-.idea/
-*.iws
-*.iml
-*.ipr
-
-# Eclipse
+# IDE specific files (Eclipse, IntelliJ, VS Code)
+.settings/
 .classpath
 .project
-.settings/
-
-# VS Code
+.idea/
+*.iml
+*.iws
+*.ipr
 .vscode/
+*.swp
+*.swo
 
-# Mac
+# Spring Boot specific
+application-*.properties
+!application.properties
+.springBeans
+
+# Operating System specific
 .DS_Store
-
-# Windows
 Thumbs.db

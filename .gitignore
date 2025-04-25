@@ -1,54 +1,53 @@
+# Compiled class file
+*.class
 
-# Python ignorables
-logs/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib64/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# Log files
+*.log
 
-pip-log.txt
-pip-delete-this-directory.txt
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
+# BlueJ files
+*.ctxt
 
-# Ignore all directories containing pyvenv.cfg
-**/pyvenv.cfg
-**/*/pyvenv.cfg
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# Node.js ignorables
-node_modules/
-npm-debug.log
-yarn-error.log
-.pnp/
-.pnp.js
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs
+hs_err_pid*
+replay_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# IDE-specific files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Local development
 .env
-.env.test
-.cache/
-.next/
-.nuxt/
-.vuepress/dist
-.serverless/
-.fusebox/
-.dynamodb/
+.env.local
